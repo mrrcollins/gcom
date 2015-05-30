@@ -5,8 +5,21 @@
 
 
 #include <stdio.h>
+#include <peekpoke.h>
+#include <conio.h>
+
+typedef unsigned char byte;
+byte lmargin = 2;
+
 int main()
 {
- printf("Hello World\n");
- return (0);
+    clrscr();
+    printf("Goz Custom OS Maker\n\n");
+
+    printf("Left margin (%d): ", lmargin);
+    scanf("%d",lmargin);
+    printf("You entered: %d", lmargin);
+
+    scanf("%d",lmargin);
+    return (0);
 }
